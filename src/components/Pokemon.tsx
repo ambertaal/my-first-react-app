@@ -35,7 +35,12 @@ export default function Pokemon({
       <p>Weight: {weight} kg</p>
       <p>Awesome: {awesome ? "YES!" : "nope, not really"}</p>
       <p>Terrifying: {terrifying ? "Very" : "nah, lovable"}</p>
-      <p>Abilities: {abilities}</p>
+      <p>Abilities ({abilities.length}):</p>
+      <ul>
+        {abilities.map((ability) => {
+          return <li>{ability}</li>;
+        })}
+      </ul>
     </div>
   );
 }
