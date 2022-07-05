@@ -3,6 +3,7 @@ import "./App.css";
 
 import Title from "./components/Title";
 import Pokemon from "./components/Pokemon";
+import Button from "./ui/Button";
 
 const all_pokemon = [
   {
@@ -40,6 +41,8 @@ function App() {
     <div className="App">
       <main>
         <Title content="Some Simple Title" />
+        <Button>Submit</Button>
+        <Button variant="secondary">Go Back</Button>
         {all_pokemon.map((pokemon) => {
           return (
             <Pokemon
